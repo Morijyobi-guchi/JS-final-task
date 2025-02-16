@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高機能メモ帳アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>メモ帳アプリ</h1>
+        
+        <div class="memo-form">
+            <input type="text" id="memoTitle" placeholder="タイトル">
+            <textarea id="memoContent" placeholder="メモの内容"></textarea>
+            <div class="memo-options">
+                <select id="importance">
+                    <option value="low">低</option>
+                    <option value="medium">中</option>
+                    <option value="high">高</option>
+                </select>
+                <button id="saveBtn">保存</button>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="メモを検索...">
+        </div>
+
+        <div class="memo-lists">
+            <div id="pinnedMemos">
+                <h2>ピン留めされたメモ</h2>
+                <div class="memo-container"></div>
+            </div>
+            <div id="normalMemos">
+                <h2>通常のメモ</h2>
+                <div class="memo-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
