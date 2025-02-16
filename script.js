@@ -67,7 +67,6 @@ class MemoApp {
       this.saveMemos();
       this.displayMemos();
 
-      // フォームをリセット
       titleInput.value = '';
       contentInput.value = '';
       importanceSelect.value = 'low';
